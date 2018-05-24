@@ -1,11 +1,15 @@
-* {
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 #cadastro {
-    top: 100;
-    margin: 0;
-    font-family: sans-serif;
-    background: #204862;
+    background: #DEDEDE;
+    display: flex;
+    min-height: 100vh;
 } 
 
 #cadastro h1 {
@@ -25,7 +29,7 @@
 
 #cadastro .form__titulo {
     
-    background: deepskyblue;
+    background: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -38,13 +42,13 @@
     
 }
 
-.conteiner-inputs{
+#cadastro .conteiner-inputs{
     padding: 10px 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-input{
+#cadastro input{
     margin-bottom: 15px;
     padding: 15px;
     font-size: 16px;
@@ -52,7 +56,7 @@ input{
     border: 1px silid darkgray;
 }
 
-.input-48{
+#cadastro .input-48{
     width: 48%;
 }
 
@@ -61,10 +65,22 @@ input{
 }
 
 .btn-enviar {
-    background: crimson;
-    color: #fff;
+    background: linear-gradient(#FFDA63, #FFB940);
+    color: brown;
     margin: auto;
     padding: 10px 30px;
+    opacity: 0.8;
+    cursor: pointer;
+
+    margin-bottom: 0;
+}
+
+.btn-enviar:hover {
+    opacity: 1;
+}
+
+.btn-enviar:hover {
+    transform: scale(0.95);
 }
 
 .form__link {
